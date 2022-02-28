@@ -9,7 +9,6 @@ resource "google_compute_instance" gcp_vm_instance {
   zone = var.zone
 
   boot_disk {
-    auto_delete = true
     initialize_params {
       image = var.source_image
       type = var.disk_type
